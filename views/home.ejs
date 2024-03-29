@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>LEGO Explorer</title>
+</head>
+
+<body>
+  <!-- Include navbar -->
+  <%- include('partials/navbar', { page: '/' }) %>
+
+  <div class="container mx-auto">
+    <div class="hero min-h-screen bg-base-200 rounded-lg p-6">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Welcome to The LEGO Hub</h1>
+          <p class="py-6">
+            Discover Amazing LEGO Sets. Dive into the world of LEGO with sets for all ages and interests.
+          </p>
+          <a href="/lego/sets" class="btn btn-primary">Explore Sets</a>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- LEGO Duplo Baby Animals -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img src="https://cdn.rebrickable.com/media/sets/10801-1.jpg" alt="LEGO Duplo Baby Animals" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Baby Animals</h2>
+          <p>
+            Meet the adorable LEGO Duplo Baby Animals! Enjoy playful moments with the baby elephant, tiger, giraffe, and panda.
+          </p>
+          <div class="card-actions justify-end">
+            <a href="/lego/sets/10801-1" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- LEGO Duplo Savanna -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img src="https://cdn.rebrickable.com/media/sets/10802-1.jpg" alt="LEGO Duplo Savanna" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Savanna</h2>
+          <p>
+            Explore the savanna and learn about its wildlife with LEGO Duplo's Savanna set. A great adventure awaits!
+          </p>
+          <div class="card-actions justify-end">
+            <a href="/lego/sets/10802-1" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- LEGO Duplo Arctic -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <img src="https://cdn.rebrickable.com/media/sets/10803-1.jpg" alt="LEGO Duplo Arctic" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Arctic</h2>
+          <p>
+            Join the LEGO Duplo Arctic adventure and discover the animals of the polar region. Creative fun in the cold awaits!
+          </p>
+          <div class="card-actions justify-end">
+            <a href="/lego/sets/10803-1" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

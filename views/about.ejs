@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>About Me - Lego Fanatic</title>
+</head>
+<body>
+  <!-- Include navbar -->
+  <%- include('partials/navbar', { page: '/about' }) %>
+
+  <!-- Responsive grid system containing 2 columns with information about me -->
+  <div class="container mx-auto">
+    <div class="hero bg-base-200 rounded-lg p-6">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">About The Lego Fanatic</h1>
+          <p class="py-6">
+            Dive into the story behind the bricks...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-5">
+      <div>
+        <img src="https://i.imgur.com/iqMmSig.jpeg" alt="Fnatic's Doggies" class="rounded-lg shadow-md" />
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold">A Bit More About Me</h2>
+        <p class="mt-4">
+          Hello, I'm a dedicated Lego collector with a strong appreciation for the art of model-building. 
+          Beyond the world of Lego, I am a computer science student who loves to spend time with his doggies, 
+          cook healthy and nutritious meals, and is addicted to the gym. Always trying to put mental health 
+          and self well-being first!
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
